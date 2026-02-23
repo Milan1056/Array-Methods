@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h2> Homework </h2>
+    <p>These are array methods with cars!
+    </p>
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        var cars = ["Ferrari", "Mclaren", "Lamborghini", "Bugatti"];
+        document.getElementById("myjoin").innerHTML = cars.join (" * ");
+        document.getElementById("myfirstpop").innerHTML = cars;
+        cars.pop();
+        document.getElementById("mysecondpop").innerHTML = cars;
+        var favourite= [
+            "Ferrari",
+            "Mclaren",
+            "Lamborghini"
+        ];
+        document.getElementById("demo2").innerHTML = favourite[1];
+        function add(a, b) {
+            return a + b;
+        }
+        function average(a, b) {
+            return add(a, b) /2;
+        }
+        let result = average(50, 72);
+        document.getElementById("demo2").innerHTML = result;
+    </script>
+</body>
+</html>
